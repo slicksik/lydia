@@ -2,13 +2,45 @@
 <html>
 <head>
   <title>Lydia</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "bootstrap", :media => "all" %>
+  <%= stylesheet_link_tag "style", :media => "all" %>
   <%= javascript_include_tag "application" %>
+<link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Brawler' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="container">
 
+<div class="row">
+<div class="span12">
+<h1 class="logo"></h1>
+</div>
+</div>
+
+<div class="row">
+<div class="span8 offset3">
+
+<ul id="menu">
+<li><a href="about.html">About Me</a></li>
+<li><a href="/contentwriting">Copywriting</a></li>
+<li><a href="/webdesign">Web Design</a></li>
+<li><a href="/contact">Contact</a></li>
+<ul>
+</div>
+
+<div class="row">
+	<div class="span12">
+<hr class="style-seven"/>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="span12">
 <%= yield %>
+</div>
+</div>
 
+</div>
 </body>
 </html>

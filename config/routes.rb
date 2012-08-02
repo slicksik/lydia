@@ -1,4 +1,14 @@
 Lydia::Application.routes.draw do
+  get "pages/Home"
+
+  get "pages/About"
+
+  get "pages/Contact"
+
+  get "pages/Services"
+
+  get "pages/Blog"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
